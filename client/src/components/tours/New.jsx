@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 const New = function () {
   const [inputs, setInputs] = useState({
     title: '',
-    tourType: 'Im too young to die',
+    tourType: '',
     groupSize: '',
     date: ''
   });
