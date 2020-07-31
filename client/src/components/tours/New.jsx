@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 const New = function () {
   const [inputs, setInputs] = useState({
     title: '',
-    tourType: '',
+    tourType: 'Im too young to die',
     groupSize: '',
     date: ''
   });
@@ -20,7 +20,6 @@ const New = function () {
     `Ultra-nightmare`
   ];
   const [redirect, setRedirect] = useState(false);
- // const tourTypes =  Axios.get('/tours/tourTypes');
   const handleSubmit = async event => {
     event.preventDefault();
     

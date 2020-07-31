@@ -10,7 +10,7 @@ const Edit = function (props) {
 
   const [inputs, setInputs] = useState({
     title: '',
-    tourType: 'im too young to die',
+    tourType: '',
     groupSize: '',
     date: ''
   });
@@ -22,7 +22,6 @@ const Edit = function (props) {
     `Ultra-nightmare`
   ];
   const [redirect, setRedirect] = useState(false);
-  //const tourTypes =  Axios.get('/api/tours/tourTypes');
   useEffect(() => {
     (async () => {
       const tourResp = await Axios.get(`/api/tours/${id}`);
