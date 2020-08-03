@@ -47,9 +47,11 @@ function Routes ({user, setUser}) {
           HOWEVER!!!
 
           In your own words, please explain what is happening in the logic below.
-          ANSWER HERE:
+          ANSWER HERE:So the each element checks if there is a user and if there is it passes value to props. 
+          If there is no user it redirects this user to home page (haha but we don't have a user) 
         */
       }
+      
       <Route exact path="/tours" render={
         props => user ? (
           <Tours {...props} user={user} />
